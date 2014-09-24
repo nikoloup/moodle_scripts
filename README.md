@@ -46,4 +46,5 @@ Usage:
 sh nikoloup_restore_script.sh $course_exports_location $flag
 ```
 where $flag = 1 if the courses are in Moodle 1 format or $flag = 0 if in Moodle 2 format
-
+You will have to change the matching rules in nikoloup_massrestore.php to place the courses in the appropriate categories if you wish.
+Courses failing import with the error 'error/missing_common_question_field' will be placed in folder 'quiz'.
