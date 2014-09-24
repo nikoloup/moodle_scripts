@@ -14,7 +14,7 @@ php nikoloup_backup_all.php $starting_id $ending_id $export_destination_full_pat
 ```
 
 ### nikoloup_delete_all_courses.php
-Delete all courses except the specific course shortnames and categories
+Delete all 2.7 courses except the specific course shortnames and categories
 
 Usage:
 ```
@@ -31,9 +31,19 @@ php nikoloup_delete_all_courses.php $arg1 $arg2 -dry
 ```
 
 ### nikoloup_delete_selected_courses.php
-Delete all courses with IDs in 'empty_courses.txt'
+Delete all 2.7 courses with IDs in 'empty_courses.txt'
 
 Usage:
 ```
 php nikoloup_delete_selected_courses.php
 ```
+
+### nikoloup_restore_script.sh & nikoloup_massrestore.php
+Import all 1.9 or 2.7 courses exports that are in a specific folder to a 2.7 Moodle installation
+
+Usage:
+```
+sh nikoloup_restore_script.sh $course_exports_location $flag
+```
+where $flag = 1 if the courses are in Moodle 1 format or $flag = 0 if in Moodle 2 format
+
